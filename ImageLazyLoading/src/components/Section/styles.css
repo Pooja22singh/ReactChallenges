@@ -1,0 +1,17 @@
+.section-container {
+  margin: 20px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+}
+
+.content {
+  margin: 20px;
+}

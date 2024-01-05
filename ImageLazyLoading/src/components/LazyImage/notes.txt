@@ -1,0 +1,14 @@
+The Intersection Observer API
+
+
+The Intersection Observer API allows you to configure a callback that is called when either of these circumstances occur:
+
+1. A target element intersects either the device's viewport or a specified element. That specified element is called the root
+   element or root for the purposes of the Intersection Observer API.
+   (So here the target element is image whose ref we are passing, and root we are considering here viewport as per our requiremt, but can be a specific elemnt as well)
+2. The first time the observer is initially asked to watch a target element.
+
+The list of entries received by the callback includes one entry for each target which reported a change in its intersection status. 
+Check the value of the isIntersecting property to see if the entry represents an element that currently intersects with the root.
+Be aware that your callback is executed on the main thread. It should operate as quickly as possible; if anything time-consuming 
+needs to be done, use Window.requestIdleCallback().
